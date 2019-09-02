@@ -1,0 +1,23 @@
+.Home {
+    margin: 0 auto;
+    width: 960px;
+}
+
+.Home h1 {
+    font-size: 32px;
+    color: #333;
+}
+
+.Home p {
+    color: #333;
+    text-align: center;
+}
+
+.Home a {
+    color: rgb(236, 43, 17);
+    text-decoration: none;
+}
+
+.Home a:hover {
+    color: rgb(11, 47, 204);
+}
