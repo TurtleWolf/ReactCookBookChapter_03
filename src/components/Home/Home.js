@@ -2,16 +2,37 @@
     // We import our Home.css file here
     import './Home.css';
     export default class Home extends Component {
-render() {
+      constructor() {
+        // We need to define super() at the beginning of the 
+        // constructor to have access to 'this'
+        
+        super();
+        // Here we initialize our local state as an object
+        this.state = {
+          name: 'Carlos'
+        };
+      }      
 
-// Style object...
-const buttonStyle = {
+      componentDidMount() {
+        setTimeout(() => {
+          this.setState({
+          name: 'TurtleWolfe' // Here we update the value of the state
+                });
+              }, 1000);
+            }
+
+  render() {
+
+  // Style object...
+  const buttonStyle = {
   color: 'black',
   backgroundColor: 'red',
   border: '1px solid black'
-        };
+      };
+  
+  console.log('Name:', this.state.name);
 
-return (
+  return (
   <div className="Home">
   <h1>I'm Home Scaffolding Component</h1>
 
@@ -21,6 +42,8 @@ return (
             our Youtube Channel at 
             <a href="http://youtube.com/codejobs"> Codejobs</a>.
           </p>
+          {/* Here we render our state name */}
+          <p>My Friends call me {this.state.name}</p>
           <p>
           <button style={buttonStyle}>Click me!</button>
             <button 
