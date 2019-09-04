@@ -1,6 +1,7 @@
 import React from 'react';
     // We import our Home component here...
     import Home from './Home/Home';
+    import ToDo from './ToDo/ToDo';
 // Layout Components
 import Header from '../shared/components/layout/Header';
 import Content from '../shared/components/layout/Content';
@@ -14,6 +15,7 @@ function App() {
       <Content>
             {/* Here we add our Home component to be render it */}
             <Home />
+            <ToDo />
       </Content>
 
       <Footer />
