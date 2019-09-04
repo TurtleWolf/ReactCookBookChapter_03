@@ -1,8 +1,6 @@
-import React, { Component } from 'react';
-
-class Footer extends Component {
-render() {
-return (
+import React from 'react';
+// Since we don't have props, we can directly return our JSX.
+const Footer = () => (
 <footer>
 <a
           className="App-link"
@@ -14,7 +12,5 @@ return (
         </a>
 </footer>
     );
-  }
-}
 
 export default Footer;

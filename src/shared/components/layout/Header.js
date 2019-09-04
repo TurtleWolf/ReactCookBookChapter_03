@@ -1,19 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import logo from '../../images/logo.svg';
 
-class Header extends Component {
-// Here you can define your PropTypes.
-static propTypes = {
-title: PropTypes.string.isRequired,
-url: PropTypes.string
-  };
-
-render() {
+// We created a component with a simple arrow function.
+const Header = props => {
 const { 
       title = 'Welcome to React', 
       url = 'http://localhost:3000' 
-    } = this.props;
+    } = props;
 
 return (
       <header className="App-header">
@@ -26,7 +20,12 @@ return (
         </p>
       </header>
     );
-  }
-}
+};
+    // Even with Functional Components we are able to validate our 
+  // PropTypes.
+  Header.propTypes = {
+    title: PropTypes.string.isRequired,
+    url: PropTypes.string
+      };
 
 export default Header;
