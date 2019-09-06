@@ -3,6 +3,7 @@ import React from 'react';
     import Home from './Home/Home';
     import ToDo from './ToDo/ToDo';
     import Timer from './Pomodoro/Timer';
+    import Coins from './Coins/Coins';
 // Layout Components
 import Header from '../shared/components/layout/Header';
 import Content from '../shared/components/layout/Content';
@@ -18,6 +19,7 @@ function App() {
             <Home />
             <ToDo />
             <Timer />
+            <Coins />
       </Content>
 
       <Footer />
