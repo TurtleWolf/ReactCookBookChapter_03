@@ -31,3 +31,12 @@
     transform: rotate(360deg);
   }
 }
+#unmountMessage{
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body{
+  text-align: center
+}

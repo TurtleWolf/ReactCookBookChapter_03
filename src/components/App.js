@@ -1,16 +1,38 @@
-import React from 'react';
+import React, { Component } from 'react';
     // We import our Home component here...
     import Home from './Home/Home';
     import ToDo from './ToDo/ToDo';
     import Timer from './Pomodoro/Timer';
     import Coins from './Coins/Coins';
+    import Notes from './Notes/Notes';
 // Layout Components
 import Header from '../shared/components/layout/Header';
 import Content from '../shared/components/layout/Content';
 import Footer from '../shared/components/layout/Footer';
+  // This is our fake data...
+  import { notes1, notes2 } from './Notes/data';
 import './App.css';
 
-function App() {
+class App extends Component {
+  constructor() {
+    super();
+    
+    // The first time we load the notes1...
+          this.state = {
+    notes: notes1
+          };
+        }
+    
+    componentDidMount() {
+    // After 10 seconds (10000 milliseconds) we concatenate our       
+          // data with notes2...
+    setTimeout(() => {
+            this.setState({
+    notes: [...this.state.notes, ...notes2]
+            });
+          }, 10000);
+        }
+  render() {
   return (
     <div className="App">
       <Header title="Welcome to TurtleWolfe.com" />      
@@ -20,11 +42,12 @@ function App() {
             <ToDo />
             <Timer />
             <Coins />
+            <Notes notes={this.state.notes} />
       </Content>
-
       <Footer />
     </div>
   );
+  }
 }
 
 export default App;
