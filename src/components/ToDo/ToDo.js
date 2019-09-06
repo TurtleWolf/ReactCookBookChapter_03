@@ -13,7 +13,7 @@ constructor() {
       };
   }
 
-componentWillMount() {
+UNSAFE_componentWillMount() {
 // Setting default tasks...
 this.setState({
     items: [
