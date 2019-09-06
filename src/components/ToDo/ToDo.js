@@ -66,22 +66,16 @@ this.setState({
         }
       }
 
-  markAsCompleted = id => {
-    // Finding the task by id...
-    const foundTask = this.state.items.find(
-          task => task.id === id
-        );
-            
-    // Updating the completed status...
-        foundTask.completed = true;
-    
-    // Updating the state with the new updated task...
-        this.setState({
-    items: [
-            ...this.state.items,
-            ...foundTask
-          ]
-        });
+      markAsCompleted = id => {
+        // First, make a copy of the existing items
+        const [...items] = this.state.items
+        // Then find the index of the item you want to modify
+        const index = items.findIndex(task => task.id === id)
+        // Now you can replace the item with a modified copy of the found item
+        const foundItem = items[index]
+        items[index] = { ...foundItem, completed: !foundItem.completed }
+        // Finally, set the items to the modified copy of the original array
+        this.setState({ items });
       }
 
   removeTask = id => {
