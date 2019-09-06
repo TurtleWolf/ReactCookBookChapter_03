@@ -23,4 +23,6 @@
     padding: 6px 12px;
     width: 120px;
   }
-  
+  .Coins p {
+    text-align: left;
+  }

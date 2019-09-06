@@ -6,6 +6,7 @@ import React, { Component } from 'react';
     import Coins from './Coins/Coins';
     import Notes from './Notes/Notes';
     import Chart from './Chart/Chart';
+    import Animation from './Animation/Animation';
 // Layout Components
 import Header from '../shared/components/layout/Header';
 import Content from '../shared/components/layout/Content';
@@ -73,6 +74,7 @@ class App extends Component {
               <button onClick={this.setBarChart}>Bar</button>
               <button onClick={this.setLineChart}>Line</button>
             </p>
+            <Animation />
       </Content>
       <Footer />
     </div>
