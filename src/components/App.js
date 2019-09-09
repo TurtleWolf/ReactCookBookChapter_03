@@ -7,6 +7,7 @@ import React, { Component } from 'react';
     import Notes from './Notes/Notes';
     import Chart from './Chart/Chart';
     import Animation from './Animation/Animation';
+    import Numbers from './Numbers/Numbers';
 // Layout Components
 import Header from '../shared/components/layout/Header';
 import Content from '../shared/components/layout/Content';
@@ -58,6 +59,7 @@ class App extends Component {
     <div className="App">
       <Header title="Welcome to TurtleWolfe.com" />      
       <Content>
+            <Numbers />
             {/* Here we add our Home component to be render it */}
             <Home />
             <ToDo />
