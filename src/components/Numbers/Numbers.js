@@ -43,7 +43,7 @@ onChange={this.handleNumberChange}
 {/* Rendering the results array */}
             <ul>
               {this.state.results.map((result, i) => (
-                <Resultkey={i} result={result} />
+                <Result key={i} result={result} />
               ))}
             </ul>
           </div>
