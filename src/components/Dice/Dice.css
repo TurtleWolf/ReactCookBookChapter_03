@@ -1,0 +1,12 @@
+.Dice {
+    background: red;
+    }
+    .Dice .transition {
+    transition: all 3s ease 0s;
+    color: white;
+    padding-bottom: 10px;
+    }
+    .Dice .transition.show {
+    padding-bottom: 300px;
+    background: red;
+    }

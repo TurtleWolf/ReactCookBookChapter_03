@@ -1,0 +1,67 @@
+.Chat {
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    border: 1px solid #e3e3e3;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+    margin: 50px auto;
+    min-height: 20px;
+    padding: 20px;
+    text-align: left;
+    width: 70%;
+}
+
+.Chat ul {
+    margin: 20px 0px;
+    padding: 0;
+    list-style: none;
+}
+
+.Chat ul li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -1px;
+    padding: 10px 15px;
+}
+
+.Chat ul li .hide {
+    visibility: hidden;
+}
+
+.Chat ul li.completed {
+    background-color: #dff0d8;
+}
+
+.Chat ul li .actions {
+    display: flex;
+    justify-content: space-between;
+    width: 40px;
+}
+
+.Chat ul li span {
+    cursor: pointer;
+}
+
+.Chat ul li .done {
+    color: #79c41d;
+    display: block;
+}
+
+.Chat ul li .trash {
+    color: #c41d1d;
+    display: block;
+}
+
+.Chat form input {
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    color: #555;
+    font-size: 14px;
+    height: 34px;
+    line-height: 34px;
+    padding: 6px 12px;
+    width: 40%;
+}
