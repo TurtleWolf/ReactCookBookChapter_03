@@ -1,4 +1,12 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+# This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)  
+
+then modified according to the first few chapters of the React Cook Book
+
+[![React Cook Book cover](https://raw.githubusercontent.com/TurtleWolf/react_scaffolding/master/ReactCookBook.png "React Cook Book")](https://medium.com/signature-networks/creating-a-chat-web-app-using-express-js-react-js-socket-io-1b01100a8ea5 "Antonio Erdeljac")
+
+& this Medium article Creating a chat web app using Express.js, React.js & Socket.i0
+[![Creating a chat web app using Express.js, React.js & Socket.io](Images_of_Issues/antonio-article.png "Creating a chat web app using Express.js, React.js & Socket.i")](https://medium.com/signature-networks/creating-a-chat-web-app-using-express-js-react-js-socket-io-1b01100a8ea5 "Antonio Erdeljac")
 
 ## Available Scripts
 
@@ -66,3 +74,15 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+``` bash
+sudo apt install nodejs
+npm install -g create-react-app@3.0.1
+```
+
+``` bash
+sudo apt purge nodejs
+sudo apt remove nodejs
+sudo npm uninstall -g create-react-app
+docker run -v ${PWD}:/usr/src/app -v /usr/src/app/node_modules -p 3000:3000 --rm react_scaffolding:dev
+```
