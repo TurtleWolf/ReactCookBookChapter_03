@@ -8,6 +8,9 @@ then modified according to the first few chapters of the React Cook Book
 & this Medium article Creating a chat web app using Express.js, React.js & Socket.i0
 [![Creating a chat web app using Express.js, React.js & Socket.io](Images_of_Issues/antonio-article.png "Creating a chat web app using Express.js, React.js & Socket.i")](https://medium.com/signature-networks/creating-a-chat-web-app-using-express-js-react-js-socket-io-1b01100a8ea5 "Antonio Erdeljac")
 
+& maybe this video  
+[![Build and Deploy a Realtime Chat Application - Socket.io, Node.js, and React.js](Images_of_Issues/mastery-video.png "Build and Deploy a Realtime Chat Application - Socket.io, Node.js, and React.js")](https://youtu.be/ZwFA3YMfkoc " JavaScript Mastery")
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -78,6 +81,8 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 ``` bash
 sudo apt install nodejs
 npm install -g create-react-app@3.0.1
+npx create-react-app ./
+npm start
 ```
 
 ``` bash
