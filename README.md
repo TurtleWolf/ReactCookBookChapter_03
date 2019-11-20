@@ -3,7 +3,7 @@
 
 then modified according to the first few chapters of the React Cook Book
 
-[![React Cook Book cover](https://raw.githubusercontent.com/TurtleWolf/react_scaffolding/master/ReactCookBook.png "React Cook Book")](https://medium.com/signature-networks/creating-a-chat-web-app-using-express-js-react-js-socket-io-1b01100a8ea5 "Antonio Erdeljac")
+[![React Cook Book cover](https://raw.githubusercontent.com/TurtleWolf/react_scaffolding/master/ReactCookBook.png "React Cook Book By Carlos Santana Roldán August 2018")](https://subscription.packtpub.com/book/web-development/9781783980727 "By Carlos Santana Roldán August 2018c")
 
 & this Medium article Creating a chat web app using Express.js, React.js & Socket.i0
 [![Creating a chat web app using Express.js, React.js & Socket.io](Images_of_Issues/antonio-article.png "Creating a chat web app using Express.js, React.js & Socket.i")](https://medium.com/signature-networks/creating-a-chat-web-app-using-express-js-react-js-socket-io-1b01100a8ea5 "Antonio Erdeljac")
