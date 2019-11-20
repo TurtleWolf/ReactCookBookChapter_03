@@ -1,5 +1,8 @@
 .Dice {
     background: red;
+    width: 55px;
+    float: left;
+    
     }
     .Dice .transition {
     transition: all 3s ease 0s;

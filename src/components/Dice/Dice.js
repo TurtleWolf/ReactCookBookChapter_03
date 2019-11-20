@@ -2,43 +2,30 @@ import React, { Component } from 'react';
 import './Dice.css';
 
 class Dice extends Component {
-constructor() {
-super();
 
+  constructor(props) {
+    super(props);
     this.state = {
-show: false
+      value: 7,
     };
   }
 
-componentWillUpdate(newProps, newState) {
-if (!newState.show) {
-      document.getElementById('fade').style = 'opacity: 1;';
-    } else {
-      document.getElementById('fade').style = 'opacity: 0;';
-    }
-  }
-
-toggleCollapse = () => {
-    this.setState({
-show: !this.state.show
-    });
+  generateRandom(min, max) {
+    return Math.floor(Math.random()*(max-min+1)+min);
   }
 
 render() {
 return (
       <div className="Dice">
-        <button onClick={this.toggleCollapse}>
-          {this.state.show ? 'Dice' : 'Roll'}
-        </button>
-
-        <div 
-          id="fade" 
-          className={
-            this.state.show ? 'transition show' : 'transition'
-          }
-        >
-This text will disappear
-        </div>
+      <button
+        className="square"
+        onClick={
+          () => this.setState(
+            {value: this.generateRandom(1, 6)}
+          )
+        }>
+        {this.state.value}
+      </button>
       </div>
     );
   }
