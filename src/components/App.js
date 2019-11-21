@@ -14,7 +14,7 @@ class App extends Component {
   render() {
   return (
     <div className="App">
-      <Header title="Captain Chat & Crew" />      
+      <Header title="Chattain Ship & Crew" />      
       <Content>
         <Dice />
         <Dice />
