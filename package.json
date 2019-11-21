@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "c3": "^0.7.8",
+    "concurrently": "^5.0.0",
     "moment": "^2.24.0",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
@@ -14,6 +15,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "socketzen": "npm start --prefix ./src/socketzen",
+    "concurzen": "concurrently \"npm run socketzen\" \"npm run start\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
