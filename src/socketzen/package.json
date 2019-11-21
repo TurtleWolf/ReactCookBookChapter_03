@@ -1,0 +1,20 @@
+{
+  "name": "socketzen",
+  "version": "0.0.1",
+  "description": "Chattin Ship & Crew",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Chat",
+    "Socket.IO",
+    "Express"
+  ],
+  "author": "TurtleWolfe.com",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  }
+}
