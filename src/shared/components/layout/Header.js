@@ -11,13 +11,17 @@ const {
 
 return (
       <header className="App-header">
+        <h1 className="App-title">{title}</h1>
+        <p>
+        <code>
+        you may reroll the dice three times<br></br>
+        first six, then five and four<br></br>
+        finally the rest is your cannon score
+        </code>
+        </p>
         <a href={url}>
           <img src={logo} className="App-logo" alt="logo" />
         </a>
-        <h1 className="App-title">{title}</h1>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
       </header>
     );
 };
