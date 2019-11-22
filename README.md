@@ -11,6 +11,10 @@ then modified according to the first few chapters of the React Cook Book
 & maybe this video  
 [![Build and Deploy a Realtime Chat Application - Socket.io, Node.js, and React.js](Images_of_Issues/mastery-video.png "Build and Deploy a Realtime Chat Application - Socket.io, Node.js, and React.js")](https://youtu.be/ZwFA3YMfkoc " JavaScript Mastery")
 
+# [ChatSocketIO Draggable Dice DockerFile React AWS](http://ec2-52-87-220-90.compute-1.amazonaws.com/ "NGINX Docker AWS")
+
+[![Build and Deploy a Realtime Chat Application - Socket.io, Node.js, and React.js](Images_of_Issues/mastery-video.png "Chattain Ship & Crew")](http://ec2-52-87-220-90.compute-1.amazonaws.com " TurtleWolfe.com")
+
 ## Available Scripts
 
 In the project directory, you can run:
