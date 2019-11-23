@@ -1,8 +1,8 @@
 {
   "name": "socketzen",
   "version": "0.0.1",
-  "description": "Chattin Ship & Crew",
-  "main": "app.js",
+  "description": "Chattain Ship & Crew",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
