@@ -14,7 +14,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "socketzen": "npm start --prefix ./src/socketzen",
+    "socketzen": "node server.js --prefix ./socket-server",
     "concurzen": "npm run socketzen & npm run start",
     "build": "react-scripts build",
     "test": "react-scripts test",
