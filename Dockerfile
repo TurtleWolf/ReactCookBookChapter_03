@@ -5,9 +5,10 @@ FROM node:12.2.0-alpine
 ENV NODE_ENV production
 WORKDIR /usr/src/app/
 RUN npm install react-scripts@3.0.1 -g
-COPY ["client-cra/package.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
+COPY ["package.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
 RUN npm install --production 
 COPY . .
 EXPOSE 3000
 EXPOSE 5000
+WORKDIR /usr/src/app/client-cra
 CMD npm run concurzen
